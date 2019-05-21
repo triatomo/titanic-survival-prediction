@@ -140,6 +140,7 @@ for i in list(train_df['Name']):
 
 train_df['Title'] = titles      
 g = sns.countplot(x='Title', data=train_df)
+# plt.rcParams['figure.figsize']=(30,5)
 plt.tick_params(axis= 'x', labelsize = 8)
 plt.savefig('titles.png')
 plt.show()
